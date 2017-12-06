@@ -16,7 +16,7 @@ var server = app.listen(port);
 app.use(express.static('public')); 
 	// static means hosting static files, non-dynamic, not changing, in public directory
 
-console.log("Local server running at port: " + port);
+console.log("Local server running at port:" + port);
 
 var socket = require('socket.io'); // imports the module socket.io 
 
