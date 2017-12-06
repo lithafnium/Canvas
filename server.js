@@ -10,13 +10,13 @@
 var express = require('express'); // imports the module
 
 var app = express(); //makes an express application 
-
-var server = app.listen(3000); 
+var port = 3000;
+var server = app.listen(port); 
 
 app.use(express.static('public')); 
 	// static means hosting static files, non-dynamic, not changing, in public directory
 
-console.log("My socket server is running");
+console.log("Local server running at port: " + port);
 
 var socket = require('socket.io'); // imports the module socket.io 
 
